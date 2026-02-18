@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TypingTest-Test Your Typing Speed:) By Shahid Akhter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/scroll.css">
+</head>
+
+<body>
+    <nav class="background">
+        <div class="name m-10" id="webname">TypingTest</div>
+        <div class="flex nav-items-component printYes display-none">
+            <div id="printer" class="nav-items">Print</div>
+        </div>
+        <div class="flex nav-items-component printYes display-none">
+            <div id="viewTypingTab" class="nav-items">Start Typing</div>
+        </div>
+    </nav>
+    <div class="flex f-vertical-center f-col min-h-screen printNone">
+        <div id="autotext" class="user-select-none">
+            <div class="flex f-vertical-center f-vertical-justify">
+                <div class="flex f-vertical-center">
+                    <select name="timeSelector" id="timeSelector">
+                        <option value="1" selected>1 Minute</option>
+                        <option value="5">5 Minutes</option>
+                        <option value="10">10 Minutes</option>
+                        <option value="15">15 Minutes</option>
+                        <option value="20">20 Minutes</option>
+                        <option value="25">25 Minutes</option>
+                        <option value="30">30 Minutes</option>
+                        <option value="60">1 Hour</option>
+                    </select>
+                    <div id="loader" class="font font-bold m-4">Loading...</div>
+                </div>
+                <div class="flex f-vertical-center">
+                    <div class="practiceScoreClass btns btns-md cursor-pointer btns-hover" id="viewPractices">Streak: <span id="practiceScore">0</span><span style="font-size:14px !important;font-weight: 600;text-decoration: underline;padding: 0 1px;">View</span></div>
+                    <div id="reset" class="btns btns-md cursor-pointer btns-hover">Save & Reset</div>
+                </div>
+
+            </div>
+            <pre id="textToWrite" class="text text-size-0 min-h-20">Your Text To Write...</pre>
+        </div>
+        <div id="entertext">
+            <textarea class="text text-size-0" id="writer" rows="4" placeholder="Enter text here..."></textarea>
+        </div>
+        <div class="btns-component flex f-horizontal-center f-wrap">
+            <input type="button" class="btns" id="times" value="Timer">
+            <input type="button" class="btns" id="speed" value="Speed">
+            <div type="button" class="btns" id="accuracy">Accuracy</div>
+        </div>
+    </div>
+    <!-- <div class="flex f-horizontal-center text-size-1 background m-0 mt-4 border-tb p-10 printNone">My Practices</div> -->
+    <div class="flex f-vertical-center f-col min-h-screen">
+        <div id="result" class="results p-10 display-none printYes"></div>
+    </div>
+    <div class="text-size-1 background text-center m-0 border-tb p-10" id="copyrightFooter">
+        Copyright &copy; reserved TypingTest - ShahidAkhter
+    </div>
+    <input type="button" id="moveToTop" class="flex btns" value="Top">
+</body>
+<script src="js/paragraphsArr.js"></script>
+<script src="js/script.js"></script>
+<script src="js/design.js"></script>
+<script src="js/reset.js"></script>
+<script src="js/printer.js"></script>
+
+</html>
